@@ -16,3 +16,7 @@ class ProductPageLocators():
     NAME_BOOK_INNER = (By.CSS_SELECTOR, ".alert-success .alertinner strong")
     PPICE_BOOK = (By.CSS_SELECTOR, "div.product_main p.price_color")
     PRICE_INNER = (By.CSS_SELECTOR, ".alert-info .alertinner strong")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
