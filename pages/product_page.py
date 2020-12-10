@@ -1,7 +1,5 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
-#from .login_page import LoginPage
-#from .locators import LoginPageLocators
 from selenium.webdriver.common.by import By
 import time
 
@@ -15,7 +13,6 @@ class ProductPage(BasePage):
         message = self.browser.find_element(*ProductPageLocators.NAME_BOOK_INNER).text
         print (product_name)
         print (message)
-        #assert self.is_element_present(*MainPageLocators.LOGIN_LINK), "Login link is not presented"
         assert product_name == message, "Name book not presented"
 
     def should_be_price_item(self):
@@ -31,3 +28,4 @@ class ProductPage(BasePage):
     def should_dissapear_of_success_message(self):
         assert self.is_disappeared(*ProductPageLocators.NAME_BOOK_INNER), \
             "Success message is presented, but should not be"
+            

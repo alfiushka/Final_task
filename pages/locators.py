@@ -15,7 +15,6 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     ADD_BASKET = (By.CLASS_NAME, "btn.btn-lg.btn-primary.btn-add-to-basket")
-    #(By.CSS_SELECTOR, "button.btn-add-to-basket")
     NAME_BOOK = (By.CSS_SELECTOR, "div.product_main h1")
     NAME_BOOK_INNER = (By.CSS_SELECTOR, ".alert-success .alertinner strong")
     PPICE_BOOK = (By.CSS_SELECTOR, "div.product_main p.price_color")
