@@ -8,7 +8,7 @@ class ProductPage(BasePage):
         add_basket = self.browser.find_element(*ProductPageLocators.ADD_BASKET)
         add_basket.click()
     def should_be_name_item(self):
-        time.sleep(3)
+        
         product_name = self.browser.find_element(*ProductPageLocators.NAME_BOOK).text
         message = self.browser.find_element(*ProductPageLocators.NAME_BOOK_INNER).text
         print (product_name)
@@ -28,4 +28,3 @@ class ProductPage(BasePage):
     def should_dissapear_of_success_message(self):
         assert self.is_disappeared(*ProductPageLocators.NAME_BOOK_INNER), \
             "Success message is presented, but should not be"
-            
